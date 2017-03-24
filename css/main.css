@@ -186,7 +186,9 @@ font-size: 1em;
     header div.welcome{ top:120px; left: 48%;}
     }
     
-    @media screen and (max-width:674px){  
+    
+    @media screen and (max-width: 674px) and (min-width: 425px) {
+     
     /* put nav back to static postition*/
     nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c;overflow:auto; }
 	nav ul,
@@ -233,7 +235,29 @@ font-size: 1em;
 	header {height: 110px; background-image: url(../images/banner_425.jpg)}
         header div.welcome { width: 100%; left: 0px; top: 46px; text-align: center;}
 	header div.welcome h1 { font-size: 1.8em; margin: -20px 10px 10px 10px;}
-        .handle{margin:-19px 2px -12px 2px;}
+      /*  .handle{margin:-19px 2px -12px 2px;}*/
+    nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c;overflow:auto; }
+	nav ul,
+	nav ul ul,
+	nav ul ul ul {display: block; position: static;}
+   nav ul li {
+            box-sizing: border-box;
+            padding: 15px;
+            float:none;
+            text-align: left;
+            width: 100%;
+         }
+       nav ul li:hover {background: none;}
+        nav ul ul{background-color:inherit;}
+        nav ul li a {
+	width: auto;
+	display: block;
+	margin: 8px 10px;
+	padding: 8px 15px;
+	border: 1px solid rgba(255,255,255,.25);
+	}
+        nav ul ul{margin-left: 1.8em;}
+        nav ul, nav ul ul{margin-top:0; margin-bottom:-26px;padding-top: 0; padding-bottom: 0;}
         
     }
     
