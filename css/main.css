@@ -108,6 +108,7 @@ padding-right: 8px; padding-left: 3px; font-family: cursive; }
 
 #intro {clear:both;text-align: left;}
 img {float:right;max-width: 100%;height: auto;}
+nav{clear:both;}
 .noteSubject { text-align: left;}
 /* set font weight on the first level not the second */
 ol  {
