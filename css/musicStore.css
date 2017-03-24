@@ -63,7 +63,7 @@ width: 100%;
 nav ul {list-style: none; margin-left:137px; padding: 0;}
 nav > ul > li {float: left;}
 nav ul::after {content:'';display:block; clear: both;}
-nav ul li a {display: inline-block; color: #fff; padding: 10px 20px; text-decoration: none; width: 124px;}
+nav ul li a {display: inline-block; color: #fff; padding: 10px 20px; text-decoration: none; width: 86px;}
 
 /*Area under Nav
 --------------------------------------------------------------------------------------- */
@@ -124,16 +124,12 @@ font-size: 1em;
 
 /* Media Queries
 ------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width: 1000px) {
-	h1
-
-
- nav {
- padding-left: 132px;
- }
-
+@media screen and (max-width: 772px) {
+    nav ul{margin-left:68px;}
+    nav ul li a{width: 72px;}
 
 }
+@media screen and (max-width: 637px) {}
 
 
 

@@ -13,6 +13,7 @@ h1{margin: 0 0 1em 0; font-size:2.8em;font-weight: 700;}
 h2{margin: 0 0 .5em 0; font-size:1.6em;font-weight: 700;line-height:1.1em;}
 a{color:blue;}
 .codeHighlight {color: blue;}
+main{margin: 5px;}
 /* Header
 --------------------------------------------------------------------- */
 header{ 
@@ -48,12 +49,27 @@ top: 0px; left: 0px;
 padding: 15px 0 0 0;
 width: 100%;
 }
+.handle{
+    color:white;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    display:none;
+    cursor: pointer;
+}
 nav::after {
     clear: both;
     content: "";
     display: block;
 }
-nav ul{list-style: none;margin:0px; padding: 0px;}
+nav ul{list-style: none;margin:0px; padding: 0px;
+   -webkit-transition: max-height: 0.4s;
+   -ms-transition: max-height: 0.4s;
+    -moz-transition: max-height: 0.4s;
+   -o-transition: max-height: 0.4s;
+
+}
 nav > ul > li{float:left;}
 nav ul li:hover {background-color: #2b0306;}
 nav ul li:hover>ul {display:block;}
@@ -87,11 +103,11 @@ nav ul ul ul {
 
 /*session
 ---------------------------------------------------------------------------------------*/
-#firstWord { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; 
+#firstWord { float: left; color: #903; font-size: 4em; line-height: 1.9em; padding-top: 4px; 
 padding-right: 8px; padding-left: 3px; font-family: cursive; }
 
 #intro {clear:both;text-align: left;}
-img {float:right;}
+img {float:right;max-width: 100%;height: auto;}
 .noteSubject { text-align: left;}
 /* set font weight on the first level not the second */
 ol  {
@@ -170,7 +186,55 @@ font-size: 1em;
     header div.welcome{ top:120px; left: 48%;}
     }
     
+    @media screen and (max-width:674px){  
+    /* put nav back to static postition*/
+    nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c;overflow:auto; }
+	nav ul,
+	nav ul ul,
+	nav ul ul ul {display: block; position: static;}
+    /*to hide second and third ul*/   
+       
+        nav ul ul,
+        nav ul ul ul li{display:none;}
+    /*display second and third when hovering*/
+        nav ul ul  :hover li{display:block;}
+        nav li{margin-top: -15px; }
+        nav ul ul {margin-left: 26px;}
+        main h1{padding:10px;}
+    
+    nav ul li {
+            box-sizing: border-box;
+            padding: 15px;
+            float:none;
+            text-align: left;
+            width: 100%;
+            
+        
+        }
+        .handle{display: block; padding-top: 1em;}
+        /*hiding and showing parts*/
+         nav ul {display: none;}
+       nav:hover #showing{display: block;height:15em;}
+        }
+    @media screen and (max-width:665px){
+       
+        header div.welcome h1 { font-size: 2em; margin: -20px 10px 10px -182px;}
+        
+    }
     
     
+    
+   @media screen and (max-width:553px){   
+       #firstWord {font-size: 3em;}
+       img{float: none;}
+       
+}
+    @media screen and (max-width: 425px) {
+	header {height: 110px; background-image: url(../images/banner_425.jpg)}
+        header div.welcome { width: 100%; left: 0px; top: 46px; text-align: center;}
+	header div.welcome h1 { font-size: 1.8em; margin: -20px 10px 10px 10px;}
+        .handle{margin:-19px 2px -12px 2px;}
+        
+    }
     
     
