@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>James Tran</title>
+<!--CSS
+--------------------------------------------------------------------------------- -->
+		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+        
+         <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+        
+	</head>
+
+<body >
+	<div id="page"><!--beginning -->
+	
+		<header > 
+
+   
+            
+		<div class="welcome">
+            <h1>Welcome to my World</h1>
+        </div>
+    	
+		</header><!--end top_header-->
+		
+           
+
+	
+	
+	
+	<main>
+		<h1>Javascript</h1>
+		<hr><br/>
+		
+    <div class="noteSubject">
+		  
+       <h3>Javascript Basic </h3>
+        <ol>
+            <li>Types and Objects
+                <ul>
+                    <li>Working with array: <br>
+                        - var multipleArray = &#91; &nbsp;&#93;&#59;<br>
+                        - <a href="https://www.w3schools.com/JS/js_array_methods.asp">Array methods</a>
+                    </li>
+                
+                 </ul>
+            
+            </li>
+            
+            <li>Working with DOM
+                <ul>
+                    <li>Accessing DOM elements <br>
+                       <img class ="png" src = "images/accessDOM.png">
+                    </li>
+                    <li>Changing DOM elements <br>
+                       <img class ="png" src = "images/changeDOM.png">
+                    </li>
+                     <li>Creating DOM elements <br>
+                         Option-1: <br>
+                       <img class ="png" src = "images/createElement1.png"><br>
+                         Option-2&#40;more preferable&#41;:<br>
+                         <img class ="png" src = "images/createElement2.png"><br>
+                         Example:<br>
+                         <img class ="png" src = "images/createElementEx.png">
+                         
+                    </li>
+                
+                 </ul>
+            
+            </li>
+            <li>Working with Events and Events Listeners
+                <ul>
+                    <li>Handling Method 1<br>
+                        <img class ="png" src ="images/eventHandle1.png">
+                    </li>
+                    <li>Handling Method 2<br>
+                        <img class ="png" src ="images/eventHandle2.png">
+                    
+                    </li>
+                    <li>Handling Method 3<br>
+                        <img class ="png" src ="images/eventHandle3.png"><br>
+                        <strong> Note: jQuery may be needed for cross browser issue.</strong>
+                     </li>
+                    <li>Working with onClick and onLoad<br>
+                        <img class ="png" src ="images/onClickonLoad.png">
+                    
+                    </li>
+                    <li>Working with onBlur and onFocus events<br>
+                        Code:<br>
+                        <img class ="png" src ="images/onBluronFocus.png"><br>
+                        Output: <br>
+                     <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" tabindex="10" />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" value="your email" name="email" id="email" tabindex="20" />
+                    </p>
+                    
+                    </li>
+                    <li>Working with Timer<br>
+                        setTimeout: <br>
+                        <img class ="png"  src ="images/timeout.png"><br>
+                        setInterval:<br>
+                        To change image every 5 seconds: <br>
+                        Code:<br>
+                        <img class ="png" src ="images/timeInterval.png"><br>
+                        Output:<br>
+                        <img src="images/family1.jpg" id="mainImage" alt="Family Picuture" width="350" height="315" class="familyImage" ><br>
+                       <strong>NOTE:</strong> <br>
+                        <img class ="png" src ="images/relativePathNote.png">
+                    
+                    </li>
+                </ul>
+            </li>
+            <li>Building Smarter Forms
+                <ul>
+                    <li>Most common events for TextField:<br>
+                    <img class ="png" src ="images/textField.png">
+                    
+                    </li>
+                    <li>Checkboxes and Radio buttons:<br>
+                    <img class ="png" src ="images/radioCheckbox.png">
+                    </li>
+                    <li>Seclect List: <br>
+                    <img class ="png" src ="images/selectList.png">
+                    </li>
+                    <li>Preventing form from being submitted: <br>
+            
+            <form name="myForm" action="submitForm.html" onsubmit="return validateForm()" method="post">
+                Name: <input type="text" id= "fname" name="fname">
+               <input type="submit" value="Submit"><br>
+                 <span id ="errMessage" style="color:red"></span>
+            </form>
+                  </li>
+                  <li>Hiding and Showing form sections<br>
+        Please check this box to get more options: <input type="checkbox" id="moreOption" onchange=" return hideShow()">
+                 <div id="options">
+                      <input type="checkbox" id="optionOne"><label>Option 1</label>
+                      <input type="checkbox" id="optionTwo"><label>Option 2</label>
+                          
+                     <input type="checkbox" id="optionThree"><labe>Option 3</labe>
+                 </div>
+                      
+                </li>
+                
+                </ul>
+             </li>
+        <li>UI Enhancement
+            <ul>
+                <li>CSS and Javascript <br>
+                &nbsp;Set inline style:<br>
+                    <img src="images/cssStyle.png"><br>
+                &nbsp;Set element with current css class: <br>
+                    <img class ="png" src="images/setClassJa.png"><br>
+                &nbsp;Change inline style:<br>
+                &nbsp;<strong>Click on the Frog</strong>
+                    <img id="moveFrog" src="images/reptiles.jpg" width="20%" onclick="return beginAnimate()">
+                </li>
+            </ul>
+        </li>
+        <li>Javascript Best Practice
+            <ul>
+            <li>Minifying your code <br>
+                <img class ="png" src = "images/minifyJava.png">
+            </li>
+            <li>Using javascript code chekecker:<br>
+                &nbsp;<a href="http://jslint.com">JsLint for Code Checker Link</a>
+                
+                
+            </li>
+            </ul>
+            
+            
+        </li>
+        
+        </ol>
+       
+        
+        
+        
+    </div>
+	</main><!--end main_section-->
+	
+        <nav>
+        <div class="handle">Menu</div>
+        <ul id="showing">
+            
+             <li><a href="index.html">Home</a></li>
+        
+            <li><a href="#">Front-End Dev </a>
+                <ul>
+                    <li><a href="html5.html">HTML </a></li>
+                    <li><a href="#">CSS </a></li>
+                
+                </ul>
+            </li>
+            
+            <li><a href="#">Back-End Dev </a>
+                <ul>
+                    <li><a href="#">PHP </a></li>
+                   
+                    <li><a href="gitGithub.html">Git &amp; Github</a></li>
+                </ul>
+            </li>
+           
+            
+            <li><a href="#">Java</a></li>  
+            
+            
+            
+        </ul>
+        
+
+	</nav><!--end top_menu-->
+
+	<footer>
+		<div class="container">
+				<div class="row twelve columns">
+					<ul class="social">
+					<li class="facebook"><a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+					<li class="twitter"><a href="https://twitter.com"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+					<li class="instagram"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a></li>
+					<li class="flickr"><a href="https://www.flickr.com"><i class="fa fa-flickr fa-lg"></i></a></li>
+					<li class="youtube"><a href="https://www.youtube.com"><i class="fa fa-youtube-square fa-lg"></i></a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+					</ul>
+				</div>
+				<div class="row twelve columns">
+					<p class="copyright">&copy; 2017 James Tran . All Rights Reserved.</p>
+				</div>
+			</div>
+        
+        
+    </footer><!--end the_footer-->
+
+</div><!--end page div tag-->
+   
+    <script type="text/javascript" src="js/javascriptTest.js"></script>
+    
+    
+
+
+</body>
+
+
+</html>
