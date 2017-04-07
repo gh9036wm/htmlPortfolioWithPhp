@@ -3,19 +3,12 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>BootstrapProject</title>
+		<title>James Tran</title>
 <!--CSS
 --------------------------------------------------------------------------------- -->
 		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
         
          <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-<!--For Bootstrap 
----------------------------------------------------------------------- -->
-        
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrapStyle.css">
 	</head>
 
 <body >
@@ -36,29 +29,70 @@
 	
 	
 	<main>
-		<h1>Bootstrap Project</h1>
+		<h1>Bootstrap 3</h1>
 		<hr><br/>
        
- <div class="noteSubject">
-     <header class="bgimage">
-         <div class="container">
-         <h1>Headline</h1>
-         </div>
-     </header>
-     <div class="container">
+    <div class="noteSubject">
        
-        <h1>Headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.</p>
+        <ol>
+            <li>Bootstrap Grid
+                <ul>
+                    <li>Bootstrap Container <br>
+                        <img class ="png" src ="images/gridSystem.png"><br><br>
+                        <img class ="png" src ="images/container.png"><br>
+                        For FLUID: 15 px margin <br>
+                        For FIX WIDTH CONTAINER:<br>
+                        <img class="png" src="images/fixwidthContainer.png"><br>
+                        <a href="BcontainerDemo.html">Container Demo</a>  
+                     </li>
+                    <li>Row <br>
+                        <img class ="png" src ="images/bootstrapRow.png">
+                    </li>
+                    <li>Columns <br>
+                        <img class ="png" src ="images/bootstrapColumn.png"><br>
+                        Column Metrics <br>
+                        <img class="png" src ="images/columnMetric.png"><br>
+                        <span Style="color:red;" >NOTE: </span>class&#61;<br>
+                        1-"column-md-6" number 6 means the width of each section taking up 6 columns of total 12<br>
+                        2- For xs, there is no break point to stack <br>
+                        <a href ="columnMetric.html">Demo of Column Metrics</a>
+                    </li>
+                    <li>Using multiple column classes<br>
+                         <img class ="png" src ="images/mulColClass.png"><br>
+                         <a href ="multipleColumnClass.html">Demo of Multiple Column Classes</a>
+                     </li>
+                    <li>Resetting Columns:<br>
+                        - This happens when getting in the certain breakpoint, one content is bigger or smaller than other which could cause the layout look funny <br>
+                        - When it gets to "col-sm-6" breakpoint, the layout starts looking funny<br>
+                        <img class ="png" src ="images/resetColumn.png"><br>
+                        - To fix this we can create the div section with class clearfix at right after the session is affected:<br>
+                        <img class ="png" src ="images/clearFixB.png"><br>
+                         <a href ="resetColumn.html">Demo of resetting column with clearfix class</a>
+                    </li>
+                    <li>Offsetting Columns<br>
+                        - It is  a way to  ask certain columns to move over by a certain number of column widths. For example:<br>
+                        -Before offsetting <br>
+                        <img class ="png" src ="images/beforOffset.png"><br>
+                        -After offsetting <br>
+                        <img class ="png" src ="images/afterOffset.png"><br>
+                        -Offset Code: <br>
+                         <img class ="png" src ="images/offsetCode.png"><br>
+                        -NOTE: it could cause a problem on the next breakpoint we should use offset-0 to set back to o from the next breakpoint<br>
+                        <img class ="png" src ="images/offSet0.png"><br>
+                         <a href ="offsetColumn.html">Demo of offset column with offset class</a>
+                    
+                    
+                    </li>
+                    
+                    
+                 </ul>
             
-     </div> 
-    <div class="container-fluid">
-       
-        <h1>Headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.</p>
+            </li>
+        </ol>
             
-     </div>      
+    
         
- </div>
+    </div>
 	</main><!--end main_section-->
 	
 	<nav>
@@ -116,21 +150,10 @@
     </footer><!--end the_footer-->
 
 </div><!--end page div tag-->
-   <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    
 
 
 </body>
 
 
 </html>
-
-
-
-
-
-
-
-
-
