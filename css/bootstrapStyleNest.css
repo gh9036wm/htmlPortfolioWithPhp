@@ -13,3 +13,8 @@ height: 200px;
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+    h3{ margin-top: 0;}
+     .services section{ text-align: left; }
+    
+}

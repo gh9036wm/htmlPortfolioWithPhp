@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrapStyle.css">
+  <link rel="stylesheet" href="css/bootstrapStyleNest.css">
   <title>Bootstrap</title>
 </head>
 <body>
@@ -15,42 +15,80 @@
   <div class="row">
       <!-- NOTE: using offset-3 to move the content in 3 unit and set col-xs-6 in order to take up 6 unit so the right
 side has only 3 unit left (3+6+3=12) to make the content locate in the center of viewport -->
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
-      <img class="icon" src="images/icon-health.svg" alt="Icon">
-      <h3>General Health</h3>
-      <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+    <div class="row"><!--create new row for each section -->
+      <div class=" col-lg-1 col-lg-offset-3"><!--then set breakpoint for each individual item-->
+            <img class="icon" src="images/icon-health.svg" alt="Icon">
+        </div>
+      <div class="col-lg-5"><!--then set breakpoint for each individual item-->
+        <h3>General Health</h3>
+        <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+      </div>
+   </div>
     </section>
+      
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+       <div class="row">  
+            <div class=" col-lg-1 col-lg-offset-3">
       <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+           </div>
+            <div class="col-lg-5">
       <h3>Exotic Pets</h3>
       <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+           </div>
+      </div>
+     
     </section>
 
     <div class="clearfix visible-sm-block"></div>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+        <div class="row">
+        <div class=" col-lg-1 col-lg-offset-3">
       <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+            </div>
+             <div class="col-lg-5">
       <h3>Grooming</h3>
       <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+        </div>
+        </div>
     </section>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+         <div class="row">
+        <div class=" col-lg-1 col-lg-offset-3">
       <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+             </div>
+              <div class="col-lg-5">
       <h3>Nutrition</h3>
       <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+        </div>
+        </div>
     </section>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+        <div class="row">
+        <div class=" col-lg-1 col-lg-offset-3">
       <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+            </div>
+             <div class="col-lg-5">
       <h3>Pest Control</h3>
       <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+    </div>
+        </div>
     </section>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+        <div class="row">
+        <div class=" col-lg-1 col-lg-offset-3">
       <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+        </div>
+         <div class="col-lg-5">
       <h3>Vaccinations</h3>
       <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+        </div>
+        </div>
     </section>   
   </div><!-- row -->   
 </div><!-- content container -->
