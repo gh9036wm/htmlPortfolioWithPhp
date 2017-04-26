@@ -110,13 +110,14 @@ padding-right: 8px; padding-left: 3px; font-family: cursive; }
 img {float:right;max-width: 100%;height: auto;}
 .png {width: 60%;}
 nav{clear:both;}
-.noteSubject { text-align: left;}
+.noteSubject { text-align: left; }
 /* set font weight on the first level not the second */
 ol  {
      font-weight:bold ;
 }
 ol ul { font-weight:normal;}
 .noteSubject img {float:none;}
+.noteSubject li {font-size: 1.2em;}
 
 /* footer
 --------------------------------------------------------------------------------------*/
