@@ -6,9 +6,9 @@
 		<title>James Tran</title>
 <!--CSS
 --------------------------------------------------------------------------------- -->
-		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
-        <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
-         <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="../css/bootstrap.min.css">
+         <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
         
 	</head>
 
@@ -88,14 +88,25 @@
                 
                 </li>
                 <li>Using $http Service to Read a JSON File<br>
-                <a href="httpServiceReadJSON.html">More detail on code in this Demo</a> 
+                <a href="httpServiceReadJSON.html">More detail on code in this Demo</a> <br>
+                  <span style="color:red;">Note</span> : The paths is used for &#36;http&#39;get(js/data.json) should 
+                    based on from the the file's location which uses this data not from current controller.js file location
+                    
+                </li>
+                <li>Filtering Content Using Directives<br>
+                    &#45;Change the content to uppercase:<br>
+                    <img class ="png" src ="images/filterUpperAngJS.png"><br>
+                     <a href="FilterUppercase.html">Filtering Uppercase and Limitting to 5 records Demo</a> <br>
+                    <a href="https://docs.angularjs.org/api/ng/filter/limitTo">More details</a> 
+                    
+                
                 </li>
             
             </ul>
         
         </li>
     </ol> 
-    <a href="AngularjsDemo.html">Angular Demo</a>     
+    
     </div>
 	</main><!--end main_section-->
 	
@@ -103,7 +114,7 @@
         <div class="handle">Menu</div>
         <ul id="showing">
             
-             <li><a href="index.html">Home</a></li>
+             <li><a href="../index.html">Home</a></li>
         
             <li><a href="#">Front-End Dev </a>
                 <ul>

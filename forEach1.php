@@ -1,5 +1,6 @@
 <?php
 $characters = ['Arthur Dent', 'Ford Prefect', 'Zaphod Beeblebrox', 'Marvin', 'Slartibartfast'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

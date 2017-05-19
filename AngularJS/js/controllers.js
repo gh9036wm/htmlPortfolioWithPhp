@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', []);
 myApp.controller('MyController1', function MyController1($scope) {
   $scope.author = {
     'name' : 'James Tran',
-    'title' : 'Web Developer',
+    'title' : 'Front-End Developer',
     'company' : 'New Grad'
   }
 });
@@ -71,9 +71,9 @@ myApp.controller('MyController2', function MyController2($scope) {
 
 
 
-
 myApp.controller('MyController3', ['$scope', '$http', function($scope, $http) {
   $http.get('js/data.json').success(function(data) {
     $scope.artists = data;
   });
 }]);
+
