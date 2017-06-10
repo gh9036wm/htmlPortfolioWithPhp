@@ -1,4 +1,9 @@
 <?php
+function redirect_to($new_location) {
+	  header("Location: " . $new_location);
+	  exit;
+	}
+
 function generate_salt($length) {
 	  // Not 100% unique, not 100% random, but good enough for a salt
 	  // MD5 returns 32 characters
@@ -25,6 +30,47 @@ function generate_salt($length) {
 	  $hash = crypt($password, $format_and_salt);
 		return $hash;
 	}
-
+  /* function find_admin_by_email($email) {
+		global $connection;
+		
+		$safe_email = mysqli_real_escape_string($connection, $email);
+		
+		$query  = "SELECT * ";
+		$query .= "FROM users ";
+		$query .= "WHERE email = '{$safe_email}' ";
+		$query .= "LIMIT 1";
+		$admin_set = mysqli_query($connection, $query);
+		confirm_query($admin_set);
+		if($admin = mysqli_fetch_assoc($admin_set)) {
+			return $admin;
+		} else {
+			return null;
+		}
+	}*/
+/*function password_check($password, $existing_hash) {
+		// existing hash contains format and salt at start
+	  $hash = crypt($password, $existing_hash);
+	  if ($hash === $existing_hash) {
+	    return true;
+	  } else {
+	    return false;
+	  }
+	}*/
+   /* function attempt_login($email, $password) {
+		$admin = find_admin_by_email($email);
+		if ($admin) {
+			// found admin, now check password
+			if (password_check($password, $admin["hashed_password"])) {
+				// password matches
+				return $admin;
+			} else {
+				// password does not match
+				return false;
+			}
+		} else {
+			// admin not found
+			return false;
+		}
+	}*/
 
 ?>

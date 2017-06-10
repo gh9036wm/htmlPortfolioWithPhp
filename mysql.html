@@ -194,11 +194,26 @@
                      </li>
                 </ul>
                     
-                    
-                    
-                    
-                    
             </li>
+    <li><span style="color:red">The most important notes when working with PHP and SQL</span>
+            <ul>
+                <li>Setting up Output Buffering for Header(redirecting page)in order not to have to put the Header command 
+                        on the top of the page. The process:<br>
+                        1- Check phpInfo page to see if output buffering was turned on. if Not: <br>
+                        2- Go to "Loaded Configuration File " to get the PATH. <br>
+                        3- Follow that path to get to php.ini <br>
+                        4- in the php.ini file, find output buffering and change it to 4096 :<br>
+                         <img src="images/outputBufferingSetup.png" /><br>
+                        5- Go to terminal type: Sudo apachectl restart to update.
+                 </li>
+                <li>Setting up hashing password space for database in order to get the whole hash for future authentication:<br>
+                         <img src="images/varcharForHash.png" />
+                </li>
+                
+            </ul>
+        
+                    
+     </li>
                 </ol>
             
         
