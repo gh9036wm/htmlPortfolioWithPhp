@@ -28,6 +28,10 @@ if (mysqli_num_rows($result)===1){
 }else{echo "id is not valid";}
 
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'includes/header.html'; ?>
@@ -49,13 +53,13 @@ if (mysqli_num_rows($result)===1){
     </div>
 
 		<div class="container main">
-           
+          
     <div >
       
           <h1>Edit Users</h1>
       
           
-          <form action="register_process.php" method="post" autocomplete="off">
+          <form action="updatePage.php" method="post" autocomplete="off">
              <table>
                 <tr>
                     <th>ID</th>
@@ -77,9 +81,10 @@ if (mysqli_num_rows($result)===1){
                 </tr>
                 
              </table>  
-              
-          <button style="float: right;" class="button button-block" name="update" />Update</button>
-              
+        
+          <button style="float: right;"  class="button button-block" name="update" >Update</button>
+         <button style="float: right;"  class="button button-block" name="cancel" >Cancel</button>
+          
          </form>
   
     </div>

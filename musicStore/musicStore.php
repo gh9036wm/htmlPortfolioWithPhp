@@ -1,22 +1,14 @@
-<?php
-//step1: create database connection
-$dbhost = "localhost";
-$dbuser = "musicUser";
-$dbpass = "musicpassword";
-$dbname = "musicStore";
-$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-// Test if connection succeeded
-  if(mysqli_connect_errno()) {
-    die("Database connection failed: " . 
-         mysqli_connect_error() . 
-         " (" . mysqli_connect_errno() . ")"
-    );
-  }
+<?php 
+
+session_start();
+require 'includes/db_connection.php'; 
+require_once 'includes/function.php';
 ?>
+
 <?php
 
 //step2: Performing database query
-$query= "SELECT * FROM users";
+$query= "SELECT * FROM products";
 $result= mysqli_query($connection,$query);
 // Test if there was a query error
 	if (!$result) {
@@ -79,43 +71,29 @@ $result= mysqli_query($connection,$query);
         </ul>
     
     </div>
-
-		<div class="container main">
-			<div class="row">
+    
+    <div class="container main">
+      
+        <?php 
+        //this is the way to get number of items display the same row instead of single from top to bottom 
+        $i = 0;
+        while( $rows= mysqli_fetch_assoc($result)){
+        if ($i % 3 === 0)  { ?> <!-- if condition is true will show the div tag otherwise not -->                                       
+        <div class="row"> 
+            <?php } ?>
 				<div class="four columns portfolio">
-					<a class="image-link" href="images/adele.jpg"><img src="images/adele.jpg" /></a>
+					<a class="image-link" href="uploaded/<?php echo $rows['image'];?>"><img src="uploaded/<?php echo $rows['image'];?>" /></a>
+                    <h4><?php echo $rows['prodName'];?></h4>
+                    <div class="imageCaption"><span>$<?php echo $rows['price'];?></span><span><a href="#">Add to Cart</a></span></div>
 				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/arcadefire.jpeg"><img src="images/arcadefire.jpeg" /></a>
-				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/Beetle.jpg"><img src="images/Beetle.jpg" /></a>
-				</div>
-			</div>
-	
-			<div class="row">
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/fourtet.jpeg"><img src="images/fourtet.jpeg" /></a>
-				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/pinkfloyd.jpeg"><img src="images/pinkfloyd.jpeg" /></a>
-				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/abba.jpg"><img src="images/abba.jpg" /></a>
-				</div>
-			</div>
-	
-			<div class="row" style="margin-bottom: 10%;">
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/fleetwood.jpg"><img src="images/fleetwood.jpg" /></a>
-				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/santana.jpg"><img src="images/santana.jpg" /></a>
-				</div>
-				<div class="four columns portfolio">
-					<a class="image-link" href="images/scorpions.jpg"><img src="images/scorpions.jpg" /></a>
-				</div>
-			</div>	
+				
+		<?php $i++;		// 
+			if ($i % 3 === 0){ ?> <!--increase 1 will change the remainder so the main div will not show till the remainder back to 0 again to get 3 images on a row-->
+        </div>
+	      <?php }} ?>
+            
+            
+		
 		</div><!--Container-->
 
 		<div class="row green">

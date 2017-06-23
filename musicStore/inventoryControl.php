@@ -38,7 +38,7 @@ if (!isset($_SESSION["admin_id"])){
            <ul>
                <li><a href="adminPage.php">Back To Main Menu</a></li>
                <li><a href="#">Products List</a></li>
-               <li><a href="#">Adding Products</a></li>
+               <li><a href="addProduct.php">Adding Products</a></li>
             
           </ul>
             
